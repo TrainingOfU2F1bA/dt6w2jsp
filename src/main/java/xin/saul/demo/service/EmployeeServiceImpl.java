@@ -2,6 +2,7 @@ package xin.saul.demo.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.ModelAndView;
 import xin.saul.demo.dao.EmployeeDao;
 import xin.saul.demo.model.Employee;
 
@@ -31,8 +32,11 @@ public class EmployeeServiceImpl implements EmployeeService {
         employeeDao.add(employee);
     }
 
+
     @Override
-    public List<Employee> queryAll() {
-        return employeeDao.queryAll();
+    public ModelAndView queryAll(ModelAndView model) {
+        model.addObject("list",employeeDao.queryAll());
+        model.setViewName("employees");
+        return model;
     }
 }

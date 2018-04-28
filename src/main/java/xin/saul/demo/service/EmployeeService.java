@@ -1,5 +1,6 @@
 package xin.saul.demo.service;
 
+import org.springframework.web.servlet.ModelAndView;
 import xin.saul.demo.model.Employee;
 
 import java.util.List;
@@ -9,5 +10,5 @@ public interface EmployeeService {
     public void deleteById(long id);
     public Employee queryById(long id);
     public void add(Employee employee);
-    public List<Employee> queryAll();
+    ModelAndView queryAll(ModelAndView model);
 }

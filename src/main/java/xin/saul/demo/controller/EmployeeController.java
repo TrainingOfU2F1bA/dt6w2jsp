@@ -1,6 +1,8 @@
 package xin.saul.demo.controller;
 
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 import xin.saul.demo.model.Employee;
 
 import java.util.List;
@@ -30,7 +32,7 @@ public class EmployeeController {
     }
 
     @GetMapping(EMPLOYEES)
-    public List<Employee> queryAll() {
+    public ModelAndView queryAll(ModelAndView model) {
         return null;
     }
 }
