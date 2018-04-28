@@ -13,26 +13,24 @@ public class EmployeeController {
     public static final String EMPLOYEE_ID = "employee/{id}";
 
     @PutMapping
-    public void update(Employee employee){
-
+    public void update(@RequestBody Employee employee) {
     }
 
     @DeleteMapping(EMPLOYEE_ID)
-    public void deleteById(@PathVariable long id){
-
+    public void deleteById(@PathVariable long id) {
     }
 
     @GetMapping(EMPLOYEE_ID)
-    public Employee queryById(@PathVariable long id){
+    public Employee queryById(@PathVariable long id) {
         return null;
     }
 
     @PostMapping
-    public void add(Employee employee){
+    public void add(@RequestBody Employee employee) {
     }
 
-    @PostMapping(EMPLOYEES)
-    public List<Employee> queryAll(){
+    @GetMapping(EMPLOYEES)
+    public List<Employee> queryAll() {
         return null;
     }
 }

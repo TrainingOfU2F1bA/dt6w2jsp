@@ -1,59 +1,24 @@
 # Spring Boot基础
 
-## 练习描述
-  本题要求使用Spring boot来完成对Employee `CURD(增删改查)` API接口的实现。
-  - 要求每一个Employee包含 `id`、`name`、`age`、`gender`四个字段。
-  - 至少需要完成查询所有 `Employee` 的API接口，并返回一个包含所有Employee的JSON，要求接口路径：`http://localhost:8080/employees`
-  - 要求使用`Postman`来向目标接口路径发送请求，获取Response，Response JSON格式如下:
-        
-      ```json
-        [
-          {
-            "id": 0,
-            "name": "小明",
-            "age": 20,
-            "gender": "男"
-          },
-          {
-            "id": 1,
-            "name": "小红",
-            "age": 19,
-            "gender": "女"  
-          },
-          {
-            "id": 2,
-            "name": "小智",
-            "age": 15,
-            "gender": "男"
-          },
-          {
-            "id": 3,
-            "name": "小刚",
-            "age": 16,
-            "gender": "男"
-          },
-          {
-            "id": 4,
-            "name": "小霞",
-            "age": 15,
-            "gender": "女"
-          }
-        ]
-      ```
-  - 将结果截图，并将图片存放在项目根目录下，截图命名为`result.png`。例如：
-    ![](https://raw.githubusercontent.com/tws-online-quiz/spring-boot-quiz/master/example.png)
-  - 有余力的同学可以尝试完成对Employee的 `CURD(增删改查)` 全部接口
-  - 代码通过小步提交，并且每次提交的描述都要有意义
+### 增添
 
-## 环境描述 
-- java8
-- Intellij-IDEA
+![2](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/img/123.png)
 
-## 如何开始
-- 使用如下方式建立Spring boot项目
-  - 从`http://start.spring.io/`生成一个项目包，并下载下来，解压，开始编码
-- 在项目根目录下使用 `./gradlew bootRun` 启动服务器，若出现 `Tomcat started on port(s): 8080 (http)` 字样，说明项目启动成功。
+### 查询所有
 
-## 输出规范
-- 项目根目录下包含 `result.png` 
-    
+![Q图片2018042812525](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/result.png)
+
+### 删除
+
+![Q图片2018042813023](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/img/QQ图片20180428130235.png)
+
+![Q图片2018042812535](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/img/QQ图片20180428125353.png)
+
+### 更新
+
+![Q图片2018042813015](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/img/QQ图片20180428130150.png)
+
+![Q图片2018042813013](https://raw.githubusercontent.com/TrainingOfU2F1bA/dt6w1api/master/img/QQ图片20180428130137.png)
+
+
+
